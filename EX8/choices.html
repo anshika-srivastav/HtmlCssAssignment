@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Choices</title>
+</head>
+<body>
+<h1>Registration Choices</h1>
+<form action="#" method="post">
+<fieldset>
+<legend>Personal Choices</legend>
+<p>Gender:
+<input type="radio" id="m" name="gender" value="male">
+<label for="m">Male</label>
+<input type="radio" id="f" name="gender" value="female">
+<label for="f">Female</label>
+<input type="radio" id="o" name="gender" value="other">
+<label for="o">Other</label>
+</p>
+<p>Interests:
+<input type="checkbox" id="c1" name="interest" value="html">
+<label for="c1">HTML</label>
+<input type="checkbox" id="c2" name="interest" value="css">
+<label for="c2">CSS</label>
+<input type="checkbox" id="c3" name="interest" value="js">
+<label for="c3">JavaScript</label>
+</p>
+<p><label for="course">Course:</label>
+<select id="course" name="course">
+<option value="">-- Select --</option>
+<option value="btech">B.Tech CSE</option>
+<option value="bca">BCA</option>
+<option value="mca">MCA</option>
+</select></p>
+<p><label for="msg">Message:</label><br>
+<textarea id="msg" name="msg" rows="4" cols="40"></textarea></p>
+<p><input type="checkbox" id="terms" required>
+<label for="terms">I accept the terms and conditions</label></p>
+<button type="submit">Register</button>
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Variables</title>
+<style>
+:root {
+--primary: #1e5bb8;
+--secondary: #f2a900;
+--spacing: 16px;
+--radius: 8px;
+}
+body { font-family: Arial, sans-serif; margin: var(--spacing); }
+.btn {
+background: var(--primary);
+color: white;
+padding: var(--spacing);
+border: none;
+border-radius: var(--radius);
+}
+.btn.alt { background: var(--secondary); color: black; }
+.dark { --primary: #222222; --secondary: #888888; padding: var(--spacing); }
+.fallback { color: var(--missing, crimson); }
+</style>
+</head>
+<body>
+<h2>Default theme</h2>
+<button class="btn">Primary</button>
+<button class="btn alt">Secondary</button>
+<div class="dark">
+<h2>Overridden variables (.dark)</h2>
+<button class="btn">Primary</button>
+<button class="btn alt">Secondary</button>
+</div>
+<p class="fallback">This text uses a fallback colour.</p>
+</body>
+</html>

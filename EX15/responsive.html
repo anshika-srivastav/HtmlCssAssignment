@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+header { background: #1e3a5f; color: white; padding: 16px; text-align: center; }
+.container { display: flex; gap: 16px; padding: 16px; }
+.sidebar { flex: 1; background: #e8f0fe; padding: 16px; }
+.main { flex: 3; background: #fff4e0; padding: 16px; }
+@media (max-width: 768px) {
+.container { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<header><h2>Responsive Page</h2></header>
+<div class="container">
+<aside class="sidebar">Sidebar</aside>
+<main class="main">Main content. On a screen narrower than 768px the sidebar moves above this area.</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+font-family: Verdana, sans-serif;
+line-height: 1.6;
+padding: 20px;
+}
+p { color: #333333; }
+.note {
+background-color: lightyellow;
+font-style: italic;
+}
+#special {
+color: white;
+background-color: crimson;
+padding: 5px;
+}
+.box p {
+border-left: 4px solid teal;
+padding-left: 10px;
+}
+a:hover {
+color: orange;
+text-decoration: none;
+}
+h1, h2 {
+color: navy;
+text-align: center;
+text-decoration: underline;
+}

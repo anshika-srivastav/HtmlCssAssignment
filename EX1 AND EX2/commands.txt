@@ -1,0 +1,45 @@
+Experiment 1 & 2 Commands:
+
+# Task 1
+git config --global user.name "Anshika Srivastav"
+git config --global user.email "anshika@example.com"
+mkdir html-css-lab
+cd html-css-lab
+git init
+git status
+
+# Task 2
+echo "# HTML and CSS Lab" > README.md
+git status
+git add README.md
+git status
+git commit -m "Add README file"
+git log --oneline
+
+# Task 3
+echo "Lab experiments by Anshika Srivastav" >> README.md
+git diff
+git add .
+git commit -m "Update README with author name"
+git log --oneline
+
+# Exp 2 Task 1
+git remote add origin https://github.com/YOUR-USERNAME/html-css-lab.git
+git remote -v
+git branch -M main
+git push -u origin main
+
+# Exp 2 Task 2
+cd ..
+git clone https://github.com/YOUR-USERNAME/html-css-lab.git lab-copy
+cd lab-copy
+ls
+git log --oneline
+
+# Exp 2 Task 3
+echo "Cloned and updated" >> README.md
+git add README.md
+git commit -m "Update README from cloned copy"
+git push
+cd ../html-css-lab
+git pull
